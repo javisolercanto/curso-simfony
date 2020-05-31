@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Ficha de libro</h1>
+    {% if libro %}
+        {{ include('datos_libro.html.twig', { 'libro': libro }) }}
+    {% else %}
+        <p>Libro no encontrado</p>
+    {% endif %}
+{% endblock %}

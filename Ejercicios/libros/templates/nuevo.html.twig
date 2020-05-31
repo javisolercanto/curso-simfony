@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Libros{% endblock %}
+{% block body %}
+    <h1>Nuevo libro</h1>
+    {{ form_start(formulario) }}
+    {{ form_widget(formulario) }}
+    {{ form_end(formulario) }}    
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Biblioteca particular</h1>
+    <ul>
+        {% for libro in libros %}
+            <li><a href="{{ path('buscar_libro', {'isbn': libro.isbn}) }}">{{ libro.titulo }}</a> [<a href="{{ path('editar_libro', {'isbn': libro.isbn}) }}">Editar</a>]</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,6 @@
+#index:
+#    path: /
+#    controller: App\Controller\InicioController::inicio
+
+logout:
+  path: /logout
